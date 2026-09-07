@@ -1,4 +1,4 @@
-FROM gradle:8.14.2-jdk21-alpine AS builder
+FROM --platform=$BUILDPLATFORM gradle:8.14.2-jdk21-alpine AS builder
 
 WORKDIR /home/gradle/project
 
